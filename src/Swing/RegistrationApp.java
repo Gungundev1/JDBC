@@ -1,16 +1,15 @@
 package Swing;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
 public class RegistrationApp {
     public static void main(String[] args) {
-        JFrame f = new JFrame();
 
-        JFrame jFrame=new JFrame("Registration app");
+
+     JFrame f=new JFrame("Registration form");
 
         JLabel heading=new JLabel("Print data on console....");
         heading.setBounds(70,20,180,40);
@@ -69,7 +68,7 @@ public class RegistrationApp {
         f.add(sbmt);
         f.add(reset);
 
-        f.setSize(500,400);
+        f.setSize(500,500);
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         f.setLayout(null);
         f.setVisible(true);
