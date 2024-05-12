@@ -1,6 +1,8 @@
 package Swing;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class AddNumber {
     AddNumber(){
@@ -17,12 +19,91 @@ public class AddNumber {
         FirstTF.setBounds(120,50,100,20);
 
         JLabel secondNumber =new JLabel("Second number");
-        secondNumber.setBounds();
-f.add(heading);
-f.add(firstNumber);
-f.add(FirstTF);
+        secondNumber.setBounds(20,75,90,30);
+
+        JTextField secondTF=new JTextField();
+        secondTF.setBounds(120,80,100,20);
+
+        JLabel result=new JLabel("Result");
+        result.setBounds(240,65,80,30);
+
+        JTextField resultTF=new JTextField();
+        resultTF.setBounds(300,70,100,25);
+
+        JButton add=new JButton("ADD");
+        add.setBounds(20,120,100,30);
 
 
+        add.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String resultno =resultTF.getText();
+                System.out.println(resultno);
+            }
+        });
+        JButton subtract=new JButton("SUBTRACT");
+        subtract.setBounds(130,120,100,30);
+
+        JButton mul=new JButton("MULTIPLY");
+        mul.setBounds(20,160,100,30);
+
+        JButton div =new JButton("DIVISION");
+        div.setBounds(130,160,100,30);
+
+
+
+        JButton reset = new JButton("Reset");
+        reset.setBounds(80,200,100,30);
+
+        add.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+//                String firstno =FirstTF.getText();
+//                String secondno=secondTF.getText();
+                String resultno =resultTF.getText();
+                System.out.println(resultno);
+            }
+        });
+        reset.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                FirstTF.setText("");
+                secondTF.setText("");
+                resultTF.setText("");
+            }
+        });
+
+
+
+
+
+
+
+        f.add(heading);
+        f.add(firstNumber);
+        f.add(FirstTF);
+        f.add(secondNumber);
+        f.add(secondTF);
+        f.add(result);
+        f.add(resultTF);
+        f.add(add);
+        f.add(reset);
+        f.add(subtract);
+        f.add(mul);
+        f.add(div);
+//submit.addActionListener(this);
+
+
+////        submit.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                int x=Integer.parseInt(firstNumber.getText());
+//                int y=Integer.parseInt(secondNumber.getText());
+//
+//                int result1=x+y;
+//                result.setText(String.valueOf(result1));
+//            }
+////        });
 
         f.setSize(500,500);
         f.setLayout(null);
@@ -30,6 +111,8 @@ f.add(FirstTF);
         f.setVisible(true);
 
     }
+
+
 
     public static void main(String[] args) {
         new AddNumber();
