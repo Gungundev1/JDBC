@@ -73,12 +73,6 @@ public class AddNumber {
             }
         });
 
-
-
-
-
-
-
         f.add(heading);
         f.add(firstNumber);
         f.add(FirstTF);
@@ -94,17 +88,6 @@ public class AddNumber {
 //submit.addActionListener(this);
 
 
-////        submit.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                int x=Integer.parseInt(firstNumber.getText());
-//                int y=Integer.parseInt(secondNumber.getText());
-//
-//                int result1=x+y;
-//                result.setText(String.valueOf(result1));
-//            }
-////        });
-
         f.setSize(500,500);
         f.setLayout(null);
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -112,9 +95,7 @@ public class AddNumber {
 
     }
 
-
-
-    public static void main(String[] args) {
+ public static void main(String[] args) {
         new AddNumber();
     }
 }
