@@ -34,36 +34,51 @@ public class AddNumber {
         add.setBounds(20,120,100,30);
 
 
-        add.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String resultno =resultTF.getText();
-                System.out.println(resultno);
-            }
-        });
+        add.addActionListener(e -> {
+                    double first = Double.parseDouble(FirstTF.getText());
+                    double second = Double.parseDouble(secondTF.getText());
+                    double result1 = first + second;
+                    resultTF.setText(String.valueOf(result1));
+                    System.out.println(result1);
+                });
+
         JButton subtract=new JButton("SUBTRACT");
         subtract.setBounds(130,120,100,30);
+
+        subtract.addActionListener(e -> {
+            double first=Double.parseDouble(FirstTF.getText());
+            double second=Double.parseDouble(secondTF.getText());
+            double result1=first-second;
+            resultTF.setText(String.valueOf(result1));
+            System.out.println(result1);
+        });
 
         JButton mul=new JButton("MULTIPLY");
         mul.setBounds(20,160,100,30);
 
+        mul.addActionListener(e -> {
+            double first=Double.parseDouble(FirstTF.getText());
+            double second=Double.parseDouble(secondTF.getText());
+            double result1=first*second;
+            resultTF.setText(String.valueOf(result1));
+            System.out.println(result1);
+        });
+
         JButton div =new JButton("DIVISION");
         div.setBounds(130,160,100,30);
 
-
+        div.addActionListener(e -> {
+            double first=Double.parseDouble(FirstTF.getText());
+            double second=Double.parseDouble(secondTF.getText());
+            double result1=first/second;
+            resultTF.setText(String.valueOf(result1));
+            System.out.println(result1);
+        });
 
         JButton reset = new JButton("Reset");
         reset.setBounds(80,200,100,30);
 
-        add.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-//                String firstno =FirstTF.getText();
-//                String secondno=secondTF.getText();
-                String resultno =resultTF.getText();
-                System.out.println(resultno);
-            }
-        });
+
         reset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -72,12 +87,6 @@ public class AddNumber {
                 resultTF.setText("");
             }
         });
-
-
-
-
-
-
 
         f.add(heading);
         f.add(firstNumber);
@@ -91,19 +100,6 @@ public class AddNumber {
         f.add(subtract);
         f.add(mul);
         f.add(div);
-//submit.addActionListener(this);
-
-
-////        submit.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                int x=Integer.parseInt(firstNumber.getText());
-//                int y=Integer.parseInt(secondNumber.getText());
-//
-//                int result1=x+y;
-//                result.setText(String.valueOf(result1));
-//            }
-////        });
 
         f.setSize(500,500);
         f.setLayout(null);
@@ -111,9 +107,6 @@ public class AddNumber {
         f.setVisible(true);
 
     }
-
-
-
     public static void main(String[] args) {
         new AddNumber();
     }
