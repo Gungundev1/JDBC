@@ -100,6 +100,11 @@ public class AddNumber {
         f.add(subtract);
         f.add(mul);
         f.add(div);
+<<<<<<< HEAD
+=======
+//submit.addActionListener(this);
+
+>>>>>>> 96cc0bd4a5616a2d80e973bafb455c7cc785219e
 
         f.setSize(500,500);
         f.setLayout(null);
@@ -107,7 +112,12 @@ public class AddNumber {
         f.setVisible(true);
 
     }
+<<<<<<< HEAD
     public static void main(String[] args) {
+=======
+
+ public static void main(String[] args) {
+>>>>>>> 96cc0bd4a5616a2d80e973bafb455c7cc785219e
         new AddNumber();
     }
 }
