@@ -32,8 +32,14 @@ public class RegistrationApp {
         JTextField  dobtf=new JTextField();
         dobtf.setBounds(120, 110, 100, 20);
 
+        JLabel email = new JLabel("E-mail");
+        email.setBounds(20,140,100,20);
+
+        JTextField emailTF=new JTextField();
+        emailTF.setBounds(120,140,100,20);
+
         JButton sbmt = new JButton("Submit");
-        sbmt.setBounds(20, 160, 100, 30);
+        sbmt.setBounds(20, 180, 100, 30);
 
         sbmt.addActionListener(new ActionListener() {
             @Override
@@ -41,20 +47,23 @@ public class RegistrationApp {
                 String name = firstNameTf.getText();
                 String lName = lastNameTf.getText();
                 String dob = dobtf.getText();
+                String email=emailTF.getText();
                 System.out.println(name);
                 System.out.println(lName);
                 System.out.println(dob);
+                System.out.println(email);
             }
         });
 
         JButton reset = new JButton("Reset");
-        reset.setBounds(140,160,100,30);
+        reset.setBounds(140,180,100,30);
         reset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 firstNameTf.setText("");
                 lastNameTf.setText("");
                 dobtf.setText("");
+                emailTF.setText("");
             }
         });
 
@@ -67,6 +76,8 @@ public class RegistrationApp {
         f.add(dobtf);
         f.add(sbmt);
         f.add(reset);
+        f.add(email);
+        f.add(emailTF);
 
         f.setSize(500,500);
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

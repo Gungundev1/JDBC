@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class AddNumber {
-    AddNumber() {
+public class Calculator {
+    Calculator() {
 
         JFrame f = new JFrame("calculator");
 
@@ -111,7 +111,7 @@ public class AddNumber {
 
     public static void main(String[] args) {
 
-        new AddNumber();
+        new Calculator();
     }
 }
 
