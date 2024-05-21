@@ -28,7 +28,8 @@ public class LoginPage {
         sbmt.setBounds(20, 120, 100, 30);
 
         sbmt.addActionListener(e -> {
-            if (passTF.equals("GUNGUN"))
+            String pass=passTF.getText();
+            if (pass.equals("GUNGUN"))
                 System.out.println("You are logined");
             else System.out.println("Incorrect password");
         });
