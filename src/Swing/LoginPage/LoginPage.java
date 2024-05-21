@@ -29,7 +29,7 @@ public class LoginPage {
 
         sbmt.addActionListener(e -> {
             String pass=passTF.getText();
-            if (pass.equals("GUNGUN"))
+            if (pass.equals("Gungun1"))
                 System.out.println("You are logined");
             else System.out.println("Incorrect password");
         });
