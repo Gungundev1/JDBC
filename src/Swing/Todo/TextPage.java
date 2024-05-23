@@ -1,25 +1,25 @@
-package Swing.LoginPage;
+package Swing.Todo;
 
 import javax.swing.*;
 
 public class TextPage {
     TextPage(){
 
-        JFrame f=new JFrame("Text Page");
+        JFrame TextPage=new JFrame("Text Page");
 
        JLabel title=new JLabel("Title");
-       title.setBounds(20,20,100,30);
+       title.setBounds(20,20,50,30);
 
         JLabel text=new JLabel("Text");
-        title.setBounds(20,40,100,30);
+        title.setBounds(20,40,50,30);
 
 
-f.add(title);
-        f.add(text);
-        f.setSize(500, 500);
-        f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        f.setLayout(null);
-        f.setVisible(true);
+        TextPage.add(title);
+        TextPage.add(text);
+        TextPage.setSize(500, 500);
+        TextPage.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        TextPage.setLayout(null);
+        TextPage.setVisible(true);
     }
 
     public static void main(String[] args) {

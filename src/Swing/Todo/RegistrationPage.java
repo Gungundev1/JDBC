@@ -1,4 +1,4 @@
-package Swing.LoginPage;
+package Swing.Todo;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -8,7 +8,7 @@ public class RegistrationPage {
 
 
         RegistrationPage() {
-            JFrame f = new JFrame("Registration form");
+            JFrame RegistrationPage =new  JFrame("Registration form");
 
             JLabel heading = new JLabel("Print data on console....");
             heading.setBounds(70, 20, 180, 40);
@@ -51,8 +51,9 @@ public class RegistrationPage {
                     System.out.println(lName);
                     System.out.println(dob);
                     System.out.println(email);
+//                    if((-firstNameTf) &( lastNameTf )&(dobtf )&(passwordTF))!=null)
                     new LoginPage();
-                    f.dispose();
+                    RegistrationPage.dispose();
                     String key=passwordTF.getText();
                 }
             });
@@ -69,22 +70,22 @@ public class RegistrationPage {
                 }
             });
 
-            f.add(heading);
-            f.add(firstName);
-            f.add(lastName);
-            f.add(dob);
-            f.add(firstNameTf);
-            f.add(lastNameTf);
-            f.add(dobtf);
-            f.add(sbmt);
-            f.add(reset);
-            f.add(password);
-            f.add(passwordTF);
+            RegistrationPage.add(heading);
+            RegistrationPage.add(firstName);
+            RegistrationPage.add(lastName);
+            RegistrationPage.add(dob);
+            RegistrationPage.add(firstNameTf);
+            RegistrationPage.add(lastNameTf);
+            RegistrationPage.add(dobtf);
+            RegistrationPage.add(sbmt);
+            RegistrationPage.add(reset);
+            RegistrationPage.add(password);
+            RegistrationPage.add(passwordTF);
 
-            f.setSize(500, 500);
-            f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-            f.setLayout(null);
-            f.setVisible(true);
+            RegistrationPage.setSize(500, 500);
+            RegistrationPage.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+            RegistrationPage.setLayout(null);
+            RegistrationPage.setVisible(true);
         }
     public static void main(String[] args) {
             new RegistrationPage();

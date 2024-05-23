@@ -1,13 +1,12 @@
-package Swing.LoginPage;
+package Swing.Todo;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.PipedWriter;
-import java.awt.Graphics;
+
 public class ProfilePage {
     ProfilePage(){
 
-        JFrame f=new JFrame("profile page");
+        JFrame ProfilePage=new JFrame("profile page");
 
          JLabel name=new JLabel("Name:");
         name.setBounds(120,50,80,30);
@@ -29,22 +28,22 @@ public class ProfilePage {
             add.setBounds(400,400,50,30);
             add.addActionListener(e -> {
                 new TextPage();
-                f.dispose();
+                ProfilePage.dispose();
             });
 
-        f.add(name);
-        f.add(email);
+        ProfilePage.add(name);
+        ProfilePage.add(email);
 //        f.add(new JLabel(i));
-f.add(add);
-f.add(title);
-f.add(title1);
+        ProfilePage.add(add);
+        ProfilePage.add(title);
+        ProfilePage.add(title1);
 
 
 
-        f.setSize(500, 500);
-        f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        f.setLayout(null);
-        f.setVisible(true);
+        ProfilePage.setSize(500, 500);
+        ProfilePage.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        ProfilePage.setLayout(null);
+        ProfilePage.setVisible(true);
 
     }
 

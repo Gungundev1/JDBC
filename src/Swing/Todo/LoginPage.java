@@ -1,14 +1,12 @@
-package Swing.LoginPage;
+package Swing.Todo;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static java.lang.System.*;
-
 public class LoginPage {
     LoginPage() {
-        JFrame f = new JFrame("Login page");
+        JFrame LoginPage = new JFrame("Login page");
         JLabel heading = new JLabel("login");
         heading.setBounds(70, 20, 180, 30);
 
@@ -33,7 +31,7 @@ public class LoginPage {
                 System.out.println("You are logined");
             else System.out.println("Incorrect password");
             new ProfilePage();
-            f.dispose();
+            LoginPage.dispose();
         });
 
 
@@ -49,18 +47,18 @@ public class LoginPage {
         });
 
 
-        f.add(heading);
-        f.add(Name);
-        f.add(nameTF);
-        f.add(Pass);
-        f.add(passTF);
-        f.add(sbmt);
-        f.add(reset);
+        LoginPage.add(heading);
+        LoginPage.add(Name);
+        LoginPage.add(nameTF);
+        LoginPage.add(Pass);
+        LoginPage.add(passTF);
+        LoginPage.add(sbmt);
+        LoginPage.add(reset);
 
-        f.setSize(500, 500);
-        f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        f.setLayout(null);
-        f.setVisible(true);
+        LoginPage.setSize(500, 500);
+        LoginPage.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        LoginPage.setLayout(null);
+        LoginPage.setVisible(true);
     }
     public static void main(String[] args) {
         new LoginPage();
