@@ -7,14 +7,17 @@ public class ProfilePage {
     ProfilePage(){
 
         JFrame ProfilePage=new JFrame("profile page");
+        ImageIcon i=new ImageIcon("../Downloads\\profile.png");
+//        i.setImage();
+
 
          JLabel name=new JLabel("Name:");
         name.setBounds(120,50,80,30);
 
         JLabel email=new JLabel("E-mail:");
         email.setBounds(120,70,80,30);
-            Toolkit t = Toolkit.getDefaultToolkit();
-            Image i = t.getImage("C:\\Users\\Gungun agrawal\\Downloads\\profile.png");
+
+//            "C:\\Users\\Gungun agrawal\\Downloads\\profile.png"
 
             JButton title=new JButton("Title"+
                     "Text");
@@ -37,7 +40,7 @@ public class ProfilePage {
         ProfilePage.add(add);
         ProfilePage.add(title);
         ProfilePage.add(title1);
-
+//         ProfilePage.add(icon);
 
 
         ProfilePage.setSize(500, 500);
